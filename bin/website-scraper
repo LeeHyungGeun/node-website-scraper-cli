@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+'usr strict';
+
+const program = require('commander');
+// const join = require('path').join;
+const chalk = require('chalk');
+// const exists = require('fs-exists-sync')
+// const spawn = require('cross-spawn');
+
+const options = {
+
+};
+
+program
+  .version(require('../package').version, '-v, --version')
+  .usage('<cmd> [website-url]')
+  .on('-h, --help', help);
+
+program
+  .command('download [website-url] [path]')
+  .description('Download a resource(js, css, html) of url into path')
+  .action(function(websiteUrl, path, option) {
+    console.log(`websiteUrl`);
+    console.log(websiteUrl);
+    console.log(`path`);
+    console.log(path);
+    console.log(`option`);
+    console.log(option);
+  })
+
+function help() {
+  console.log('  Commands:');
+  console.log(`     ${chalk.green('download [website-url] [path-to-download]')}           Download a resource(js, css, html) of website-url into path`);
+  console.log();
+  console.log('  All commands can be run with -h (or --help) for more information.');
+}
