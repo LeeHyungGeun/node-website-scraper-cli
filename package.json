@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/LeeHyungGeun/node-website-scraper-cli.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["crawler", "website", "download"],
+  "author": "LeeHyungGeun <lhg4031@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LeeHyungGeun/node-website-scraper-cli/issues"
